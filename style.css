@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
+}
+
+nav{
+   
+    width: 100%;
+}
+
+#navigation{
+    position:sticky;
+    z-index: 100;
+    top: 0;
+    background-color: black;
+    box-shadow: 5px 5px 5px black;
+}
+
+#navbar-brand{
+    margin-left: 10px;
+}
+
+.navbar-sec >  ul >li > a{
+    font-weight: 400;
+}
+
+.navbar-sec > a{
+    border-bottom: 2px solid transparent; 
+}
+
+.navbar-sec a:hover{
+    border-bottom: 2px solid #337ab7;
+}
+
+.logo{
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 1px;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.account{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section{
+    width: 100%;
+    min-height: 100vh;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+}
+
+#home{
+    background-image: linear-gradient(.25deg,rgba(0,0,0,0.4),rgba(0,0,0,0.5)),url(images/home.jpg);
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+}
+
+#home h1{
+    color: white;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.sign{
+    width: 200px;
+}
+
+#box{
+    width: 40%;
+    height: 50px;
+}
+
+.home-second{
+    width: 400px;
+}
+
+#home > p{
+    font-size: 40px;
+}
+
+#explore{
+    flex-direction: column;
+    background-color: white !important;
+}
+
+#page-image1{
+    float: left;
+}
+
+#page-image2{
+    float: right;
+}
+
+#para1,#headline{
+    margin-right: 1rem;
+}
+
+#para2,#headline{
+    margin-left: 1rem;
+}
+
+.interior{
+    box-shadow: 5px 5px 6px black;
+}
+
+#branches{
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#testimonial{
+    width: 100%;
+}
+
+@media(max-width:900px){
+    #explore img{
+        margin: 5px;
+        width: 90%;
+        height: 200px;
+    }
+
+    #page-image2{
+        float: none;
+    }    
+
+    #page-image1{
+        float: none;
+    }
+
+    .image-text{
+        margin-left: 10px;
+    }
+
+    #para2,#para1{
+        margin-left: 10px;
+        font-size: 18px !important;
+    }
+
+    #image h3{
+        text-align: start;
+    }
+
+    #navigation > img{
+        height: 20px;
+        width: 60px;
+    }
+
+    #foot-end{
+        align-items: flex-end !important;
+    }
+}
